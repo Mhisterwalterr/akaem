@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        ul{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+       <fieldset>
+        <legend>personal information</legend>
+        <ul>
+            <li>
+                <label for="fname">full name</label>
+                <input type="text" name="fullname" id="fname">
+            </li>
+            <li><label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </li>
+            <li><label for="address">home address</label>
+                <input type="text" name="address" id="address" maxlength="">
+
+            </li>
+            <li>
+                <label for="telephone">phone number</label>
+                <input type="text" name="phone number" id="">
+            </li>
+            <li>
+
+            </li>
+        </ul>
+       </fieldset> 
+
+       <fieldset>
+        <legend>other iformation</legend>
+            <ul>
+                <li>
+                    <h3>gender</h3>
+                    <label for="male">male</label>
+                    <input type="radio" name="gd" id="male">
+
+                    <label for="female">female</label>
+                    <input type="radio" name="gd" id="female" checked>
+                </li>
+                <li>
+                    <h3>marital status</h3>
+                    <label for="sig">single</label>
+                    <input type="radio" name="mar" id="sig">
+
+                    <label for="marr">married</label>
+                    <input type="radio" name="mar" id="marr">
+
+                    <label for="div">divorced</label>
+                    <input type="radio" name="mar" id="div">
+
+                    <label for="win">widow</label>
+                    <input type="radio" name="mar" id="win">
+                </li>
+                <li>
+                    <h3>state of origin</h3>
+                    <select>
+                    <option value="main">select your state</option>
+                    <optgroup label="South East">
+                    <option value="ab">abia</option> 
+                    <option value="im">imo</option>
+                    <option value="an">anambra</option>
+                    <option value="Enugu">Enugu</option>   
+                    </optgroup>
+
+                    <optgroup abel="South West">
+                    <option value="on">ondo</option>
+                    <option value="oy">oyo</option>
+                    <option value="ig">lagos</option>
+                    <option value="ek">Ekiti</option>
+                    </optgroup>  
+
+                    </select>
+                </li>
+                <li>
+                    <label for="upload">upload files</label>
+                    <input type="file" name="upload"id="upload" multiple accept="image/*,.pdf">
+                </li>
+
+                <li>
+                    <label for="desc">describe yorself</label><br>
+                    <textarea name="desc" id="desc" cols="50" rows="5"></textarea>
+                </li>
+            </ul>
+       </fieldset>
+       <fieldset>
+         <h3>Checkbox</h3>
+         <ul>
+            <li>
+                <label for="python">python</label>
+                <input type="checkbox" name="python" id="python">
+
+                <label for="python">python</label>
+                <input type="checkbox" name="python" id="python">
+
+                <label for="python">python</label>
+                <input type="checkbox" name="python" id="python">
+            </li>
+            <li></li>
+         </ul>
+
+       </fieldset>
+    
+</body>
+</html>
